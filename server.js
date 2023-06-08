@@ -22,12 +22,7 @@ app.get('/api/products/list',(req,res)=>{
     res.json(items);
 });
 
-app.get('/:id',(req,res)=>{
-    const {productId1} = req.params;
-    res.json({productId1});
-    res.send('<h1>Hello World</h1> ');
-    
-})
+
 
 //PRODUCT DETAILS API
 app.get('/api/products/:id',(req,res)=>{
